@@ -1,11 +1,11 @@
-function writeCards(message,event) {
+const writeCards = (arr,event) => {
     const messages = []
-    for(let i = 0; i < message.length;i++) {
+    for(let i = 0; i < arr.length;i++) {
         
-           const greetingMessage = `Thank you, ${message[i]}, for the wonderful ${event} gift!`
+           const greetingMessage = `Thank you, ${arr[i]}, for the wonderful ${event} gift!`
            messages.push(greetingMessage)
     }
-    return messages;
+    return messages
 
 }
 
